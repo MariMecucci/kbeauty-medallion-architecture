@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: kbeauty
+    catalog: workspace
+    schema: default
+
+    tables:
+      - name: kbeauty_silver_products
+        description: "Cleaned and standardized K-Beauty product data from the Silver layer."

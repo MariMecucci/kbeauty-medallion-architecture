@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: gold_brand_summary
+    description: "Brand-level analytical summary for the K-Beauty product catalog."
+
+    columns:
+      - name: brand
+        description: "Brand name."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: total_products
+        description: "Number of products associated with the brand."
+        data_tests:
+          - not_null
+
+  - name: gold_category_summary
+    description: "Category-level analytical summary for the K-Beauty product catalog."
+
+    columns:
+      - name: category
+        description: "Product category."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: total_products
+        description: "Number of products associated with the category."
+        data_tests:
+          - not_null

@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_kbeauty_products
+    description: "Staging model built from the cleaned K-Beauty Silver layer."
+
+    columns:
+      - name: product_id
+        description: "Unique product identifier."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Product name."
+        data_tests:
+          - not_null
+
+      - name: brand
+        description: "Standardized K-Beauty brand name."
+        data_tests:
+          - not_null
+
+      - name: category
+        description: "Standardized product category."
+        data_tests:
+          - not_null
+
+      - name: in_stock
+        description: "Indicates whether the product is currently in stock."
+        data_tests:
+          - not_null
