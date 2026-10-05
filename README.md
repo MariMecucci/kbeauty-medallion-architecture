@@ -114,6 +114,16 @@ Final test result:
 
 **12 / 12 tests passed**
 
+## Databricks Notebooks
+
+The Databricks part of the project is also available directly in this repository:
+
+- [01 — Bronze Ingestion](notebooks/01_bronze_ingestion.ipynb)
+- [02 — Silver Transformation](notebooks/02_silver_transformation.ipynb)
+- [03 — Gold Analytics](notebooks/03_gold_analytics.ipynb)
+
+These notebooks show the PySpark transformations used to build the Bronze, Silver and Gold layers before integrating the analytical layer with dbt.
+
 ## Lineage
 
 The final dbt lineage is:
@@ -125,13 +135,4 @@ stg_kbeauty_products
        ↙        ↘
 gold_brand_summary   gold_category_summary
 
-## Databricks Notebooks
-
-The Databricks part of the project is also available directly in this repository:
-
-- [01 — Bronze Ingestion](notebooks/01_bronze_ingestion.ipynb)
-- [02 — Silver Transformation](notebooks/02_silver_transformation.ipynb)
-- [03 — Gold Analytics](notebooks/03_gold_analytics.ipynb)
-
-These notebooks show the PySpark transformations used to build the Bronze, Silver and Gold layers before integrating the analytical layer with dbt.
 
